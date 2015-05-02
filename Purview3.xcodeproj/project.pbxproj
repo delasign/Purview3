@@ -14,6 +14,8 @@
 		F6648E661AF5874B00AC7E8D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6648E651AF5874B00AC7E8D /* Images.xcassets */; };
 		F6648E691AF5874B00AC7E8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6648E671AF5874B00AC7E8D /* LaunchScreen.xib */; };
 		F6648E751AF5874B00AC7E8D /* Purview3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6648E741AF5874B00AC7E8D /* Purview3Tests.m */; };
+		F6648E7F1AF588BD00AC7E8D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6648E7E1AF588BD00AC7E8D /* libz.dylib */; };
+		F6648E831AF5892C00AC7E8D /* Gimbal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6648E821AF5892C00AC7E8D /* Gimbal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		F6648E6E1AF5874B00AC7E8D /* Purview3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Purview3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6648E731AF5874B00AC7E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6648E741AF5874B00AC7E8D /* Purview3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Purview3Tests.m; sourceTree = "<group>"; };
+		F6648E7E1AF588BD00AC7E8D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F6648E821AF5892C00AC7E8D /* Gimbal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Gimbal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6648E831AF5892C00AC7E8D /* Gimbal.framework in Frameworks */,
+				F6648E7F1AF588BD00AC7E8D /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		F6648E4C1AF5874B00AC7E8D = {
 			isa = PBXGroup;
 			children = (
+				F6648E821AF5892C00AC7E8D /* Gimbal.framework */,
+				F6648E7E1AF588BD00AC7E8D /* libz.dylib */,
 				F6648E571AF5874B00AC7E8D /* Purview3 */,
 				F6648E711AF5874B00AC7E8D /* Purview3Tests */,
 				F6648E561AF5874B00AC7E8D /* Products */,
@@ -347,6 +355,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/taniguchik1/Downloads/gimbalsdk_2/Frameworks,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Purview3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +370,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/taniguchik1/Downloads/gimbalsdk_2/Frameworks,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Purview3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

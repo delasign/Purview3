@@ -6,9 +6,15 @@
 //  Copyright (c) 2015 100x. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ViewController.h" 
+#import <Gimbal/Gimbal.h>
 
-@interface ViewController ()
+
+// c9154a3f-654e-4fe1-a7c7-f94c817996f8
+
+@interface ViewController ()<GMBLPlaceManagerDelegate>
+
+@property (nonatomic) GMBLPlaceManager *placeManager;
 
 @end
 
@@ -16,12 +22,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    
+    [Gimbal setAPIKey:@"c9154a3f-654e-4fe1-a7c7-f94c817996f8" options:nil];
+    
+    [Gimbal resetApplicationInstanceIdentifier];
+    
+    if ([GMBLPlaceManager isMonitoring]) {
+        NSLog(@"*****");
+    }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+     [GMBLPlaceManager startMonitoring];
+    
+    self.placeManager = [GMBLPlaceManager new];
+    self.placeManager.delegate = self;
+    [GMBLPlaceManager startMonitoring];
 }
 
 @end

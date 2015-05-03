@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60DAFCD1AF59CCF00A34012 /* AugmentedKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFCC1AF59CCF00A34012 /* AugmentedKit.framework */; };
+		F60DAFCF1AF59CDE00A34012 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFCE1AF59CDE00A34012 /* QuartzCore.framework */; };
+		F60DAFD11AF59CE600A34012 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFD01AF59CE600A34012 /* CoreMedia.framework */; };
+		F60DAFD31AF59CEE00A34012 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFD21AF59CEE00A34012 /* CoreVideo.framework */; };
+		F60DAFD51AF59CF600A34012 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFD41AF59CF600A34012 /* AVFoundation.framework */; };
+		F60DAFD71AF59CFE00A34012 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F60DAFD61AF59CFE00A34012 /* CoreLocation.framework */; };
 		F6648E5B1AF5874B00AC7E8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6648E5A1AF5874B00AC7E8D /* main.m */; };
 		F6648E5E1AF5874B00AC7E8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6648E5D1AF5874B00AC7E8D /* AppDelegate.m */; };
 		F6648E611AF5874B00AC7E8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6648E601AF5874B00AC7E8D /* ViewController.m */; };
@@ -29,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F60DAFCC1AF59CCF00A34012 /* AugmentedKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AugmentedKit.framework; sourceTree = "<group>"; };
+		F60DAFCE1AF59CDE00A34012 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F60DAFD01AF59CE600A34012 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		F60DAFD21AF59CEE00A34012 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		F60DAFD41AF59CF600A34012 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F60DAFD61AF59CFE00A34012 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F6648E551AF5874B00AC7E8D /* Purview3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purview3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6648E591AF5874B00AC7E8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6648E5A1AF5874B00AC7E8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -51,6 +63,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60DAFD71AF59CFE00A34012 /* CoreLocation.framework in Frameworks */,
+				F60DAFD51AF59CF600A34012 /* AVFoundation.framework in Frameworks */,
+				F60DAFD31AF59CEE00A34012 /* CoreVideo.framework in Frameworks */,
+				F60DAFD11AF59CE600A34012 /* CoreMedia.framework in Frameworks */,
+				F60DAFCF1AF59CDE00A34012 /* QuartzCore.framework in Frameworks */,
+				F60DAFCD1AF59CCF00A34012 /* AugmentedKit.framework in Frameworks */,
 				F6648E831AF5892C00AC7E8D /* Gimbal.framework in Frameworks */,
 				F6648E7F1AF588BD00AC7E8D /* libz.dylib in Frameworks */,
 			);
@@ -69,6 +87,12 @@
 		F6648E4C1AF5874B00AC7E8D = {
 			isa = PBXGroup;
 			children = (
+				F60DAFD61AF59CFE00A34012 /* CoreLocation.framework */,
+				F60DAFD41AF59CF600A34012 /* AVFoundation.framework */,
+				F60DAFD21AF59CEE00A34012 /* CoreVideo.framework */,
+				F60DAFD01AF59CE600A34012 /* CoreMedia.framework */,
+				F60DAFCE1AF59CDE00A34012 /* QuartzCore.framework */,
+				F60DAFCC1AF59CCF00A34012 /* AugmentedKit.framework */,
 				F6648E821AF5892C00AC7E8D /* Gimbal.framework */,
 				F6648E7E1AF588BD00AC7E8D /* libz.dylib */,
 				F6648E571AF5874B00AC7E8D /* Purview3 */,
@@ -434,6 +458,7 @@
 				F6648E7A1AF5874B00AC7E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6648E7B1AF5874B00AC7E8D /* Build configuration list for PBXNativeTarget "Purview3Tests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +467,7 @@
 				F6648E7D1AF5874B00AC7E8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
